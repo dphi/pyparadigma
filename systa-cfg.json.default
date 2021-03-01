@@ -1,0 +1,85 @@
+{
+    "Heizung1": {
+        "pattern": {
+            "6": "0c",
+            "7": "01"
+        },
+        "values": {
+            "TA Außentemperatur": {
+                "start_byte": 12,
+                "format": "h",
+                "adjust": "divby10"
+            },
+            "TWO (Temp Speicher Oben)": {
+                "start_byte": 14,
+                "format": "h",
+                "adjust": "divby10"
+            },
+            "TI HK1": {
+                "start_byte": 20,
+                "format": "h",
+                "adjust": "divby10"
+            },
+            "TV Vorlauf-Temp. HK1": {
+                "start_byte": 24,
+                "format": "h",
+                "adjust": "divby10"
+            },
+            "TR Rücklauf-Temp. HK1": {
+                "start_byte": 28,
+                "format": "h",
+                "adjust": "divby10"
+            },
+            "TPO": {
+                "start_byte": 32,
+                "format": "h",
+                "adjust": "divby10"
+            },
+            "TPU": {
+                "start_byte": 34,
+                "format": "h",
+                "adjust": "divby10"
+            }
+        }
+    },
+    "Heizung2": {
+        "pattern": {
+            "6": "0c",
+            "7": "02"
+        },
+        "values": {
+            "TIsoll HK1": {
+                "start_byte": 8,
+                "format": "h"
+            },
+            "Temp Vorlauf Soll HK1": {
+                "start_byte": 12,
+                "format": "h",
+                "adjust": "divby10"
+            },
+            "TWO Soll (Temp Speicher Oben?)": {
+                "start_byte": 16,
+                "format": "h",
+                "adjust": "divby10"
+            },
+            "TPO Soll (???)": {
+                "start_byte": 18,
+                "format": "h",
+                "adjust": "divby10"
+            },
+            "Betriebsstunden Kessel": {
+                "start_byte": 24,
+                "format": "h"
+            },
+            "Kesselstarts": {
+                "start_byte": 28,
+                "format": "h"
+            },
+            "Pumpe HK1 %": {
+                "start_byte": 37,
+                "format": "b",
+                "adjust": "divby10"
+            }
+        }
+    }
+}
