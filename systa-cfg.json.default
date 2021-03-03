@@ -1,6 +1,107 @@
 {
-    "Heizung1": {
+    "fc3e2401": {
+        "pattern":{
+            "4":"fc",
+            "5":"3e",
+            "6":"24",
+            "7":"01"
+        },
+        "values":{
+            "kollektortemperatur": {
+                "start_byte": 8, 
+                "format":"h",
+                "adjust":"divby10"
+            },
+            "speichertemp": {
+                "start_byte": 10, 
+                "format":"h",
+                "adjust":"divby10"
+            },
+            "solarvorlauf": {
+                "start_byte": 12, 
+                "format":"h",
+                "adjust":"divby10"
+            },
+            "aussentemp": {
+                "start_byte": 14, 
+                "format":"h",
+                "adjust":"divby10"
+            },
+            "solarruecklauf": {
+                "start_byte": 16, 
+                "format":"h",
+                "adjust":"divby10"
+            },
+            "durchfluss": {
+                "start_byte": 18, 
+                "format":"h",
+                "adjust":"divby10"
+            },
+            "pso": {
+                "start_byte": 20, 
+                "format":"h",
+                "adjust":"divby10"
+            },
+            "tagesleistung": {
+                "start_byte": 36,
+                "format": "h",
+                "__comment":"could be 37,38 instead"
+            },
+            "gesamt": {
+                "start_byte": 41,
+                "format": "h",
+                "__comment": "could be 41,42 instead"
+            },
+            "status": {
+                "start_byte": 25,
+                "format": "b"
+            }
+        }
+    },
+    "0b01": {
+        "pattern":{ 
+            "4": "fc",
+            "6": "0b",
+            "7": "01"
+        },
+        "values":{
+            "tsa": {
+                "start_byte": 8,
+                "format": "h",
+                "adjust":"divby10"
+            },
+            "tse": {
+                "start_byte": 10,
+                "format": "h",
+                "adjust":"divby10"
+            },
+            "twu": {
+                "start_byte": 12,
+                "format": "h",
+                "adjust":"divby10"
+            },
+            "pso": {
+                "start_byte": 16,
+                "format":"b"
+            },
+            "status-solar": {
+                "start_byte": 18,
+                "format":"b"
+            },
+            "frostschutz": {
+                "start_byte": 20,
+                "format": "b"
+            },
+            "ctr": {
+                "start_byte": 21, 
+                "format":"b",
+                "adjust":"divby10"
+            }
+        }
+    },
+    "0c01": {
         "pattern": {
+            "4": "fc",
             "6": "0c",
             "7": "01"
         },
@@ -39,11 +140,23 @@
                 "start_byte": 34,
                 "format": "h",
                 "adjust": "divby10"
+            },
+            "Tagesleistung": {
+                "start_byte": 36,
+                "format": "h",
+                "__comment": "could be 37,38 instead"
+            },
+            "Gesamt": {
+                "start_byte": 40, 
+                "format": "h",
+                "__comment": "could be 41,42 instead"
+
             }
         }
     },
-    "Heizung2": {
+    "0c02": {
         "pattern": {
+            "4": "fc",
             "6": "0c",
             "7": "02"
         },
